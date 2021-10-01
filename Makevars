@@ -1,0 +1,8 @@
+CC=/usr/bin/clang
+CXX=/usr/bin/clang++
+FC=/usr/local/Cellar/gcc/11.2.0/bin/gfortran
+F77=/usr/local/Cellar/gcc/11.2.0/bin/gfortran
+CXX14FLAGS += -O3 -mtune=native -arch x86_64 -ftemplate-depth-256
+# LDFLAGS=-L/usr/bin/clang/lib
+FLIBS=-L/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0 -L/usr/local/Cellar/gcc/11.2.0/lib/gcc/11 -lgfortran -lquadmath -lm
+PKG_CXXFLAGS=-std=c++11
